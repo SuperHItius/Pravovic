@@ -210,10 +210,17 @@ li .nav-item {
 .price {
     padding: 90px 0;
 }
+
 .rate-block-container {
     display: flex;
     align-items: center;
 }
+
+.rate-block-container div {
+    outline: 1px solid red;
+    min-width: 230px;
+}
+
 .rate-block {
     padding: 50px 25px;
     box-shadow: 0 0 8px 1px rgba(0,0,0,.2);
@@ -334,7 +341,7 @@ li .nav-item {
         margin: auto;
     }
 
-    ..block-form {
+    .block-form {
         max-width: 400px;
     }
 
@@ -345,13 +352,6 @@ li .nav-item {
 @media (max-width: 760px) {
     .navbar-light .navbar-toggler-icon {
         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-    }
-    .rate-block-container {
-        flex-direction: column;
-    }
-    .rate-block {
-        width: 100%;
-        margin: 20px 0;
     }
 }
 @media (max-width: 576px) {
@@ -366,6 +366,15 @@ li .nav-item {
         flex-direction: column;
     }
 
+    .rate-block-container {
+        flex-direction: column;
+    }
+
+    .rate-block {
+        width: 100%;
+        margin: 20px 0
+    }
+
     .info-block {
         height: auto;
         width: 100%;
@@ -376,5 +385,9 @@ li .nav-item {
     .footer-p {
         width: 100%;
         font-size: 45px;
+    }
+
+    .rate-list {
+        text-align: center;
     }
 }
