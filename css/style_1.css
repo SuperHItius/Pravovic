@@ -170,42 +170,52 @@ li .price__nav-item {
     margin: 20px;
     background-size: cover;
 }
+
 .company__brend--brend-1 {
     background-image: url(../img/Tekta-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-2 {
     background-image: url(../img/su22-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-3 {
     background-image: url(../img/PIK-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-4 {
     background-image: url(../img/Morton-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-5 {
     background-image: url(../img/Miel-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-6 {
     background-image: url(../img/LeaderGroup1-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-7 {
     background-image: url(../img/Kortros-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-8 {
     background-image: url(../img/Donstroi-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-9 {
     background-image: url(../img/A101-logo.png);
     background-repeat: no-repeat;
 }
+
 .company__brend--brend-10 {
     background-image: url(../img/YIT-logo.png);
     background-repeat: no-repeat;
@@ -231,37 +241,47 @@ li .price__nav-item {
     box-sizing: border-box;
     margin: 0 40px;
 }
+
 .price__rate-block--rate-heading, .price__rate-block--rate-price {
     text-align: center;
     font-size: 36px;
 }
+
 .price__rate-block--rate-heading {
     color: #575757;
 }
+
 .price__rate-block--rate-price {
     color: #2f93d8;
 }
+
 .price__rate-block .btn-primary {
     width: 100%;
     background-color: #2f93d8;
     padding: 20px;
 }
+
 .price__rate-block--rate-list {
     list-style: none;
     padding: 0;
 }
+
 .price__rate-block--centr .price__rate-block--rate-list {
     margin-bottom: 60px;
 }
+
 .price__rate-block--centr {
     margin-top: -30px;
 }
+
 .price .tab-content {
     margin-top: 60px;
 }
+
 .price .nav-pills {
     justify-content: center;
 }
+
 .info-block {
     background-color: #2f93d8;
     width: 100%;
@@ -273,7 +293,7 @@ li .price__nav-item {
     margin: auto;
 }
 
-.info-block p {
+.info-block__footer-p {
     color: white;
     font-size: 60px;
     text-transform: uppercase;
@@ -283,7 +303,7 @@ li .price__nav-item {
     font-size: 36px;
 }
 
-.form-footer {
+.info-block__form-footer {
     padding: 32px 25px 32px 25px;
     background-color: white;
     
@@ -295,19 +315,21 @@ li .price__nav-item {
     text-align: center;
 }
 
-.form-footer input {
+.info-block__form-footer input {
     margin: 0;
     margin-bottom: 10px;
     width: 100%;
 }
-.footer-btn {
+
+.info-block__form-footer--footer-btn {
     background-color: #2f93d8;
     padding: 20px 35px;
     width: 100%;
     color: white;
     font-size: 18px;
 }
-.footer-link {
+
+.info-block__form-footer--footer-link {
     font-size: 15px;
     color: #2f93d8;
     text-align: center;
@@ -322,10 +344,10 @@ li .price__nav-item {
     margin: auto;
 }
 
-.info-of {
+.info-footer__info-of {
     text-align: right;
 }
-.city {
+.info-footer__city {
     font-size: 16px;
     margin: 2px 0;
 }
@@ -345,7 +367,7 @@ li .price__nav-item {
 }
 
 @media (max-width: 992px) {
-    .rate-block {
+    .price__rate-block {
         margin: 0 10px;
     }
 
@@ -359,7 +381,7 @@ li .price__nav-item {
         font-size: 45px;
     }
 
-    .heading-block-form {
+    .block-form__heading-form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -373,20 +395,20 @@ li .price__nav-item {
         max-width: 400px;
     }
 
-    .heading-link {
+    .block-form__heading-link {
         font-size: 18px;
     }
 
-    .icon-block::after {
+    .coop-box__icon-block::after {
         right: -10px;
     }
 
-    .footer-btn {
+    .info-block__form-footer--footer-btn {
         max-height: 60px;
         padding-top: 10px;
     }
 
-    .form-footer input {
+    .info-block__form-footer input {
         height: 40px;
         font-size: 25px;
     }
@@ -401,7 +423,7 @@ li .price__nav-item {
         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
     }
 
-    .icon-block::after {
+    .coop-box__icon-block::after {
         right: -20px;
     }
 }
@@ -410,11 +432,11 @@ li .price__nav-item {
         font-size: 36px;
     }
 
-    .icon-block::after {
+    .coop-box__icon-block::after {
         display: none;
     }
 
-    .info-of {
+    .info-footer__info-of {
         text-align: left;
     }
 }
@@ -425,11 +447,11 @@ li .price__nav-item {
         flex-direction: column;
     }
 
-    .rate-block-container {
+    .price__rate-block-container {
         flex-direction: column;
     }
 
-    .rate-block {
+    .price__rate-block {
         width: 100%;
         margin: 20px 0
     }
@@ -441,22 +463,22 @@ li .price__nav-item {
         text-align: center;
     }
 
-    .footer-p {
+    .info-block__footer-p {
         width: 100%;
         font-size: 45px;
     }
 
-    .rate-list {
+    .price__rate-block--rate-list {
         text-align: center;
     }
 }
 
 @media (max-width: 520px) {
-    .footer-p {
+    .info-block__footer-p {
         font-size: 20px !important;
     }
 
-    .footer-p span {
+    .info-block__footer-p span {
         font-size: 16px !important;
     }
 
@@ -464,12 +486,12 @@ li .price__nav-item {
         font-size: 20px;
     } 
     
-    .footer-btn {
+    .info-block__form-footer--footer-btn {
         font-size: 12px;
         padding: 0 15px 0 15px;
     }
 
-    .form-footer input {
+    .info-block__form-footer input {
         outline: 0;
         margin: 1px;
     }
@@ -481,20 +503,20 @@ li .price__nav-item {
         text-transform: uppercase;
     }
 
-    .brend {
+    .company__brend {
         min-width: 120px;
         min-height: 120px;
         margin: 20px;
         background-size: cover;
     }
 
-    .form-footer input {
+    .info-block__form-footer input {
         font-size: 16px;
         height: 25px;
         margin-bottom: 5px;
     }
 
-    .footer-btn {
+    .info-block__form-footer--footer-btn {
         height: 30px;
         font-size: 18px;
     }
