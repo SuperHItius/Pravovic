@@ -17,9 +17,15 @@ h2 {
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, .8)
 }
-li .nav-item {
+li .price__nav-item {
     text-align: right;
 }
+
+.navbar-collapse__call {
+    color: white;
+}
+
+
 .intro-sect {
     background-image: url(../img/bground.jpg);
     background-size: cover;
@@ -28,42 +34,45 @@ li .nav-item {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-
 }
-.intro-sect h1, .intro-sect h3{
+
+.intro-sect__main-headline {
     color: white;
     text-align: center;
-}
-.intro-sect h1 {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 48px;
 }
-.call {
+
+.intro-sect__main-subheading {
     color: white;
+    text-align: center;
 }
-.text-quest {
+
+.navbar-collapse__call__text-quest {
     font-size: 14px;
     margin-bottom: 2px;
 }
-.tell {
+
+.navbar-collapse__call__tell {
     font-size: 20px;
 }
-.intro-list {
+
+.intro-sect__intro-list {
     margin-top: 80px;
 }
 
-.intro-list h4, .intro-list li {
+.intro-sect__intro-list h4, .intro-sect__intro-list li {
     color: white;
 }
-.intro-list ul {
+.intro-sect__intro-list ul {
     list-style: none;
     padding: 0;
 }
-.intro-list li {
+.intro-sect__intro-list li {
     margin: 20px 0;
 }
-.intro-list li:before {
+.intro-sect__intro-list li:before {
     content: "";
     background-image: url(../img/check-white\ copy\ 4.png);
     display: inline-block;
@@ -76,12 +85,7 @@ li .nav-item {
     margin-right: 10px;
 }
 
-.heading-block-form {
-    width: 100%;
-    max-width: 1000px;
-}
-
-.block-form {
+.block-form__heading-form {
     background-color: white;
     width: 100%;
     max-width: 320px;
@@ -94,13 +98,13 @@ li .nav-item {
     padding: 20px;
 }
 
-.heading-link {
+.block-form__heading-link {
     margin-bottom: 15px;
     height: 50px;
     width: 100%;
     max-width: 320px;
 }
-.heading-btn {
+.block-form__heading-btn {
     width: 100%;
     max-width: 320px;
     color: white;
@@ -114,12 +118,12 @@ li .nav-item {
     padding: 100px 0;
 }
 
-.icon-block {
+.coop-box__icon-block {
     text-align: center;
     position: relative;
     margin-top: 70px;
 }
-.icon-block::after {
+.coop-box__icon-block::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -131,25 +135,27 @@ li .nav-item {
     background-repeat: no-repeat;
     top: 40px;
     right: 0;
-
 }
-.icon-img {
+
+.coop-box__icon-img {
     border: 2px solid #2f93d8;
     border-radius: 50%;
     display: inline-block;
-    padding: 23px;
+    padding: 21px;
     width: 100px;
     height: 100px;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
-.last-block::after {
+
+.coop-box__icon-block--last-block::after {
     display: none;
 } 
+
 .company {
     margin: 0 64px;
 }
-.flex-container-1, .flex-container-2 {
+.company__flex-container-1, .company__flex-container-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -158,51 +164,59 @@ li .nav-item {
     margin-bottom: 90px;
 }
 
-.brend {
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    margin: 60px 100px;
+.company__brend {
+    min-width: 120px;
+    min-height: 120px;
+    margin: 20px;
+    background-size: cover;
 }
-.brend-1 {
+
+.company__brend--brend-1 {
     background-image: url(../img/Tekta-logo.png);
     background-repeat: no-repeat;
 }
-.brend-2 {
+
+.company__brend--brend-2 {
     background-image: url(../img/su22-logo.png);
     background-repeat: no-repeat;
 }
-.brend-3 {
+
+.company__brend--brend-3 {
     background-image: url(../img/PIK-logo.png);
     background-repeat: no-repeat;
 }
-.brend-4 {
+
+.company__brend--brend-4 {
     background-image: url(../img/Morton-logo.png);
     background-repeat: no-repeat;
 }
-.brend-5 {
+
+.company__brend--brend-5 {
     background-image: url(../img/Miel-logo.png);
     background-repeat: no-repeat;
 }
-.brend-6 {
+
+.company__brend--brend-6 {
     background-image: url(../img/LeaderGroup1-logo.png);
     background-repeat: no-repeat;
 }
-.brend-7 {
+
+.company__brend--brend-7 {
     background-image: url(../img/Kortros-logo.png);
     background-repeat: no-repeat;
 }
-.brend-8 {
+
+.company__brend--brend-8 {
     background-image: url(../img/Donstroi-logo.png);
     background-repeat: no-repeat;
 }
-.brend-9 {
+
+.company__brend--brend-9 {
     background-image: url(../img/A101-logo.png);
     background-repeat: no-repeat;
 }
-.brend-10 {
+
+.company__brend--brend-10 {
     background-image: url(../img/YIT-logo.png);
     background-repeat: no-repeat;
 }
@@ -210,59 +224,76 @@ li .nav-item {
 .price {
     padding: 90px 0;
 }
-.rate-block-container {
+
+.price__rate-block-container {
     display: flex;
     align-items: center;
 }
-.rate-block {
+
+.price__rate-block-container div {
+    min-width: 230px;
+}
+
+.price__rate-block {
     padding: 50px 25px;
     box-shadow: 0 0 8px 1px rgba(0,0,0,.2);
     width: 270px;
     box-sizing: border-box;
     margin: 0 40px;
 }
-.rate-heading, .rate-price {
+
+.price__rate-block--rate-heading, .price__rate-block--rate-price {
     text-align: center;
     font-size: 36px;
 }
-.rate-heading {
+
+.price__rate-block--rate-heading {
     color: #575757;
 }
-.rate-price {
+
+.price__rate-block--rate-price {
     color: #2f93d8;
 }
-.rate-block .btn-primary {
+
+.price__rate-block .btn-primary {
     width: 100%;
     background-color: #2f93d8;
     padding: 20px;
 }
-.rate-list {
+
+.price__rate-block--rate-list {
     list-style: none;
     padding: 0;
 }
-.rate-block-centr .rate-list {
+
+.price__rate-block--centr .price__rate-block--rate-list {
     margin-bottom: 60px;
 }
-.rate-block-centr {
+
+.price__rate-block--centr {
     margin-top: -30px;
 }
+
 .price .tab-content {
     margin-top: 60px;
 }
+
 .price .nav-pills {
     justify-content: center;
 }
+
 .info-block {
     background-color: #2f93d8;
     width: 100%;
     max-width: 1150px;
     margin: auto;
     height: 605px;
-    padding-left: 50px;
-    padding-top: 100px;
+    padding: 100px 50px 0 50px; 
+    max-width: 1050px;
+    margin: auto;
 }
 
-.info-block p {
+.info-block__footer-p {
     color: white;
     font-size: 60px;
     text-transform: uppercase;
@@ -272,49 +303,75 @@ li .nav-item {
     font-size: 36px;
 }
 
-.form-footer {
+.info-block__form-footer {
     padding: 32px 25px 32px 25px;
     background-color: white;
+    
 }
 
 .form-footer p {
-    font-size: 24px;
+    font-size: 16px;
     color: #2f93d8;
     text-align: center;
 }
 
-.form-footer input {
+.info-block__form-footer input {
     margin: 0;
     margin-bottom: 10px;
     width: 100%;
 }
-.footer-btn {
+
+.info-block__form-footer--footer-btn {
     background-color: #2f93d8;
     padding: 20px 35px;
     width: 100%;
     color: white;
     font-size: 18px;
 }
-.footer-link {
+
+.info-block__form-footer--footer-link {
     font-size: 15px;
-    padding: 20px 60px 30px 60px;
     color: #2f93d8;
     text-align: center;
+    overflow-wrap: break-word;
+    margin-top: 20px;
 }
-.info-of {
+
+.info-footer {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.info-footer__info-of {
     text-align: right;
 }
-.city {
+.info-footer__city {
     font-size: 16px;
     margin: 2px 0;
 }
+
+.info-block__flex {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .navbar-collaps {
+        background-color: white !important;
+    }
+}
+
 @media (max-width: 992px) {
-    .rate-block {
+    .price__rate-block {
         margin: 0 10px;
     }
 
     .info-block {
-        outline: 1px solid red;
         text-align: center;  
         padding: 50px;
         height: auto;        
@@ -324,7 +381,7 @@ li .nav-item {
         font-size: 45px;
     }
 
-    .heading-block-form {
+    .block-form__heading-form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -334,29 +391,53 @@ li .nav-item {
         margin: auto;
     }
 
-    ..block-form {
+    .block-form {
         max-width: 400px;
     }
 
-    .heading-link {
+    .block-form__heading-link {
         font-size: 18px;
     }
+
+    .coop-box__icon-block::after {
+        right: -10px;
+    }
+
+    .info-block__form-footer--footer-btn {
+        max-height: 60px;
+        padding-top: 10px;
+    }
+
+    .info-block__form-footer input {
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .info-footer {
+        word-wrap: break-word;
+    }
 }
-@media (max-width: 760px) {
+
+@media (max-width: 766px) {
     .navbar-light .navbar-toggler-icon {
         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
     }
-    .rate-block-container {
-        flex-direction: column;
-    }
-    .rate-block {
-        width: 100%;
-        margin: 20px 0;
+
+    .coop-box__icon-block::after {
+        right: -20px;
     }
 }
 @media (max-width: 576px) {
     .intro-sect h1, h2 {
         font-size: 36px;
+    }
+
+    .coop-box__icon-block::after {
+        display: none;
+    }
+
+    .info-footer__info-of {
+        text-align: left;
     }
 }
 
@@ -366,6 +447,15 @@ li .nav-item {
         flex-direction: column;
     }
 
+    .price__rate-block-container {
+        flex-direction: column;
+    }
+
+    .price__rate-block {
+        width: 100%;
+        margin: 20px 0
+    }
+
     .info-block {
         height: auto;
         width: 100%;
@@ -373,8 +463,62 @@ li .nav-item {
         text-align: center;
     }
 
-    .footer-p {
+    .info-block__footer-p {
         width: 100%;
         font-size: 45px;
     }
+
+    .price__rate-block--rate-list {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .info-block__footer-p {
+        font-size: 20px !important;
+    }
+
+    .info-block__footer-p span {
+        font-size: 16px !important;
+    }
+
+    .info-block p {
+        font-size: 20px;
+    } 
+    
+    .info-block__form-footer--footer-btn {
+        font-size: 12px;
+        padding: 0 15px 0 15px;
+    }
+
+    .info-block__form-footer input {
+        outline: 0;
+        margin: 1px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .company__brend {
+        min-width: 120px;
+        min-height: 120px;
+        margin: 20px;
+        background-size: cover;
+    }
+
+    .info-block__form-footer input {
+        font-size: 16px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .info-block__form-footer--footer-btn {
+        height: 30px;
+        font-size: 18px;
+    }
+
 }
